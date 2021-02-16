@@ -1,0 +1,16 @@
+{
+  "name": "ideia-unica",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": "git@github.com:victorgoecking/ideia-unica.git",
+  "author": "Victor Goecking <victorgoecking96@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
