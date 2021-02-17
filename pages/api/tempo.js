@@ -7,6 +7,7 @@ async function tempo(request, response) {
     const dogRandomResponseJson = await dogRandomResponse.json();
     const dog = dogRandomResponseJson.message;
 
+    //responsta em cache de 10 segundos
     response.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate');
 
     response.json({
