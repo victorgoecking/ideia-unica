@@ -37,6 +37,8 @@ function Produtos(props) {
 
 export default Produtos;
 
+
+//Delay
 function delay(ms){
     return new Promise(resolve => setTimeout(resolve, ms))
 } 
