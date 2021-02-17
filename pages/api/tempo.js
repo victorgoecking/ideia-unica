@@ -7,6 +7,8 @@ async function tempo(request, response) {
     const dogRandomResponseJson = await dogRandomResponse.json();
     const dog = dogRandomResponseJson.message;
 
+    response.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate');
+
     response.json({
         date: dynamicDate.toGMTString(),
         dog: dog
